@@ -16,11 +16,10 @@
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2022.0.1</spring-cloud.version>
-        <awsSpringVersion>3.0.3</awsSpringVersion>
+        <awsspring.version>3.0.3</awsspring.version>
         <aws.java.sdk.version>2.21.17</aws.java.sdk.version>
     </properties>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/software.amazon.awssdk/aws-sdk-java -->
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>aws-sdk-java</artifactId>
@@ -67,24 +66,10 @@
             <dependency>
                 <groupId>io.awspring.cloud</groupId>
                 <artifactId>spring-cloud-aws-dependencies</artifactId>
-                <version>${awsSpringVersion}</version>
+                <version>${awsspring.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>software.amazon.awssdk</groupId>-->
-<!--                <artifactId>bom</artifactId>-->
-<!--                <version>2.21.17</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>runtime</scope>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.amazonaws</groupId>-->
-<!--                <artifactId>aws-java-sdk-bom</artifactId>-->
-<!--                <version>1.12.472</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>import</scope>-->
-<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
