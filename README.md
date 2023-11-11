@@ -7,7 +7,7 @@
 
 ## Functionalities
 * Display content of an **S3** bucket with Thymeleaf.
-* Subscribe to an SQS **queue**.
+* Subscribe to an **SQS** queue.
 * Externalize the configuration of our application using the **Parameter Store**.
 
 ![image](https://github.com/AntonioDiaz/spring_boot_aws/assets/725743/b8fbbb52-c090-49ae-aba7-ce4b76728777)
