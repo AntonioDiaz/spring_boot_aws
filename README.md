@@ -3,6 +3,7 @@
 <!-- TOC -->
   * [Functionalities](#functionalities)
   * [Links](#links)
+  * [Parameter Store](#parameter-store)
 <!-- TOC -->
 
 ## Functionalities
@@ -35,3 +36,24 @@
     ]
 }
 ```
+
+## Parameter Store
+https://docs.awspring.io/spring-cloud-aws/docs/3.0.3/reference/html/index.html#spring-cloud-aws-parameter-store
+
+* Add dependence to pom.xml:
+```xml
+<dependency>
+    <groupId>io.awspring.cloud</groupId>
+    <artifactId>spring-cloud-aws-starter-parameter-store</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-bootstrap</artifactId>
+</dependency>
+```
+* Add property:
+````properties
+spring.config.import=optional:aws-parameterstore:/my-app/dev
+````
+* Create the parameter: 
+![image](https://github.com/AntonioDiaz/spring_boot_aws/assets/725743/afadb8d1-4f89-4176-b0c0-07a9e16cbfe9)

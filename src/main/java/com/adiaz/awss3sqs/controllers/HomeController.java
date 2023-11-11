@@ -14,21 +14,14 @@ import java.util.List;
 @Slf4j
 public class HomeController {
 
-
-  private final String profileName;
-
-  @Value("${custom.bucket-name}")
   private final String bucketName;
 
   private final S3Client s3Client;
 
   private final String bucketLocation;
 
-
-  public HomeController(@Value("${cloud.aws.credentials.profile-name}") String  profileName,
-                        @Value("${custom.bucket-name}")String bucketName,
+  public HomeController(@Value("${custom.bucket-name}") String bucketName,
                         S3Client s3Client) {
-    this.profileName = profileName;
     this.bucketName = bucketName;
     this.s3Client = s3Client;
     String s3Region = this.s3Client
